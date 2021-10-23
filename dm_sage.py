@@ -5,12 +5,12 @@ def is_powersmooth(x, B):
            return false
     return true
 
-def lcm(a, b):
+def ppcm(a, b):
     return (a * b /gcd(a, b))
 
 def compute_bound(B):
     args = range(2,B+1)
     r = 1
     for i in args:
-        r = lcm(r,i)
+        r = ppcm(r,i)
     return r
