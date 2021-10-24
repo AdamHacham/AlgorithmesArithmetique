@@ -14,3 +14,12 @@ def compute_bound(B):
     for i in args:
         r = ppcm(r,i)
     return r
+
+def tronc(M):
+    x = M
+    T = []
+    while x > 1:
+        T.append(x)
+        x = x>>1
+    T.append(x)
+    print(T)
